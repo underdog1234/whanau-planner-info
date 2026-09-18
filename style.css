@@ -1,0 +1,32 @@
+/* Whānau School Planner style guide: light only, semantic tokens, cream canvas. */
+:root {
+  --colour-canvas:#fff7e8; --colour-surface:#ffffff;
+  --colour-ink:#173b3f; --colour-ink-strong:#102f33; --colour-ink-soft:#24535a;
+  --colour-text-muted:#64757a; --colour-line:#d5dedd;
+  --colour-coral:#f47c6c; --colour-gold:#f4c542;
+  --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-6:1.5rem;
+  --radius-card:.75rem; --radius-pill:999px;
+  --font:"DejaVu Sans","Noto Sans",Arial,sans-serif;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--colour-canvas); color:var(--colour-ink);
+  font-family:var(--font); font-size:16px; line-height:1.55; }
+.page { max-width:42rem; margin:0 auto; padding:var(--space-6) var(--space-4);
+  display:flex; flex-direction:column; gap:var(--space-4); }
+h1, h2 { color:var(--colour-ink-strong); margin:0; line-height:1.25; }
+h1 { font-size:1.5rem; }
+h2 { font-size:1.0625rem; }
+p, ul { margin:0; }
+ul { padding-left:1.25rem; display:flex; flex-direction:column; gap:var(--space-2); }
+a { color:var(--colour-ink-soft); }
+a:focus-visible { outline:3px solid rgb(36 83 90 / 35%); outline-offset:2px; }
+.lede { color:var(--colour-text-muted); }
+time { font-variant-numeric:tabular-nums; }
+.card { background:var(--colour-surface); border:1px solid var(--colour-line);
+  border-radius:var(--radius-card); padding:var(--space-4);
+  display:flex; flex-direction:column; gap:var(--space-3); }
+.dots { display:flex; gap:10px; }
+.dots span { width:7px; height:7px; border-radius:var(--radius-pill); }
+.dots span:nth-child(odd) { background:var(--colour-coral); }
+.dots span:nth-child(even) { background:var(--colour-gold); }
+.foot { font-size:.875rem; color:var(--colour-text-muted); }
